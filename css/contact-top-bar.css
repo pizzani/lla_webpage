@@ -21,6 +21,7 @@
 .contact-top-bar ul{
     display: flex;
     gap: 10px;
+    padding-left: 0;
 }
 
 .contact-top-bar .text li{
