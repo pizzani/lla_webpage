@@ -1,0 +1,73 @@
+/* General color variables */
+:root {
+    --primary-color: #3498db; /* General theme color */
+    --secondary-color: #2ecc71;
+    --background-color: #f5f5f5;
+    --text-color: #333333;
+    --text-light-color: #ffffff;
+    --error-color: #e74c3c;
+    --warning-color: #f39c12;
+    --info-color: #8e44ad;
+    --success-color: #27ae60;
+  }
+
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+
+  a {
+    color: var(--primary-color);
+  }
+  
+  a:hover {
+    color: var(--secondary-color);
+  }
+
+  button {
+    background-color: var(--primary-color);
+    color: var(--text-light-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  /* Alerts */
+  .alert {
+    padding: 15px;
+    border-radius: 5px;
+    color: var(--text-light-color);
+  }
+  
+  .alert.error {
+    background-color: var(--error-color);
+  }
+  
+  .alert.warning {
+    background-color: var(--warning-color);
+  }
+  
+  .alert.info {
+    background-color: var(--info-color);
+  }
+  
+  .alert.success {
+    background-color: var(--success-color);
+  }
+  
+  .header {
+    background-color: var(--primary-color);
+    color: var(--text-light-color);
+    padding: 20px;
+  }
+  
+  .footer {
+    background-color: var(--secondary-color);
+    color: var(--text-light-color);
+    text-align: center;
+    padding: 10px;
+  }
