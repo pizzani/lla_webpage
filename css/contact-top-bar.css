@@ -1,0 +1,44 @@
+@media (max-width: 850px) {
+    .contact-top-bar {
+      display: none !important;
+    }
+  }
+
+.contact-top-bar {
+    display: flex;
+    margin-top: 0.6%;
+    margin-bottom: 0.6%;
+    padding-right: 12%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contact-top-bar .socials {
+    align-items: center;
+
+}
+
+.contact-top-bar ul{
+    display: flex;
+    gap: 10px;
+}
+
+.contact-top-bar .text li{
+    display: flex;
+    align-items: center;
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+.contact-top-bar .text em {
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.contact-top-bar .vertical-line {
+    width: 1px;
+    height: 20px;
+    background-color: gray;
+    margin-left: 1%;
+    margin-right: 1%;
+}
