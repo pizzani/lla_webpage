@@ -46,17 +46,13 @@ body {
   }
   
   a:hover {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   ul, ol {
     padding-left: 20px;
-    margin-bottom: 20px;
   }
   
-  li {
-    margin-bottom: 10px;
-  }
 
   blockquote {
     padding: 15px 20px;

@@ -4,3 +4,10 @@ fetch('components/contact-top-bar.html')
         document.getElementById('contact-top-bar').innerHTML = data;
     })
     .catch(error => console.error('Erro ao carregar a barra de navegação:', error));
+
+fetch('components/navbar.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+    })
+    .catch(error => console.error('Erro ao carregar a barra de navegação:', error));
