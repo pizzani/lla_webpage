@@ -15,7 +15,6 @@
 
 .contact-top-bar .socials {
     align-items: center;
-
 }
 
 .contact-top-bar ul{
@@ -27,13 +26,14 @@
 .contact-top-bar .text li{
     display: flex;
     align-items: center;
-    font-weight: lighter;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #598933;
 }
 
 .contact-top-bar .text em {
-    font-size: 12px;
-    font-weight: lighter;
+    font-size: 14px;
+    font-weight: 300;
 }
 
 .contact-top-bar .vertical-line {

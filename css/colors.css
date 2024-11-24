@@ -1,9 +1,9 @@
 /* General color variables */
 :root {
-    --primary-color: #3498db; /* General theme color */
-    --secondary-color: #2ecc71;
+    --primary-color:#7DC146 ; /* General theme color */
+    --secondary-color: #8dbf9b;
     --background-color: #f5f5f5;
-    --text-color: #333333;
+    --text-color: #070404;
     --text-light-color: #ffffff;
     --error-color: #e74c3c;
     --warning-color: #f39c12;

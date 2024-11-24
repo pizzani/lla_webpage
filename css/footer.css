@@ -1,6 +1,6 @@
 footer {
     border-top: 1px solid;
-    border-color: black;
+    border-color: #598933;
     padding: 20px 12% 2% 12%;
 }
 
@@ -12,6 +12,7 @@ footer .footer-contents{
 
 footer .footer-contents h1{
     font-size: 14px;
+    color:#598933;
 }
 
 footer .footer-contents .footer-logo {
@@ -36,7 +37,7 @@ footer .footer-call-to-action .contacts .contacts-socials{
 .footer-contents .horizontal-line {
     width: 100%;
     height: 1px;
-    background-color: gray;
+    background-color: lightgray;
     margin: 0 0 5px 0;
 }
 
