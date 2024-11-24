@@ -75,10 +75,10 @@
   }
 
 .navbar-toggle {
-    display: none;  /* Hide the toggle button on large screens */
+    display: none;
     background: none;
     border: none;
-    font-size: 24px;
+    font-size: 36px;
     cursor: pointer;
     color: var(--primary-color);
 }
@@ -89,35 +89,35 @@
     color: white;
     font-size: 30px;
     cursor: pointer;
-    z-index: 1001; /* Make sure it stays above other content */
-    display: none; /* Hide by default */
+    z-index: 1001; 
+    display: none; 
 }
 
-/* When the navbar is open, show the close button */
 .navbar-menu.show .close-btn {
     display: block;
     align-self: self-start;
 }
 
-/* Large screens (Desktop/Tablet) */
-@media (min-width: 769px) {
+@media (min-width: 1000px) {
     .dropdown-content {
-        position: absolute; /* Float the dropdown */
-        /* top: 100%; Position it below the parent */
-        /* left: 0; */
+        position: absolute;
         display: none;
-        z-index: 1; /* Hide dropdown by default */
+        z-index: 1;
     }
 
-    /* Show the dropdown when hovering on the parent */
     .dropdown:hover .dropdown-content {
-        display: block; /* Show dropdown on hover */
+        display: block;
     }
 }
 
-/* Mobile view (small screens) */
-@media (max-width: 768px) {
-    /* Initially hide the menu on mobile */
+@media (max-width: 1000px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        margin-right: auto;
+        padding-right: 12%;
+    }
+
     .navbar .navbar-menu {
         display: none;
         flex-direction: column;
@@ -136,24 +136,52 @@
         color: white;
     }
 
+    .dropdown .dropbtn {
+        color: white;
+    }
+
+    .arrow {
+        display: inline-block;
+        margin-left: 5px;
+        width: 10px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 1px 1px 0;
+        transform: rotate(45deg);
+        transition: transform 0.3s ease;
+      }
+
     .dropdown-content {
-        position: relative;  /* Stays in the flow of the page */
-        margin-top: 5px;  /* Adds space below the parent link */
+        position: relative;
+        margin-top: 5px;
         display: none;
     }
 
-    /* Show dropdown on click (JavaScript controls this behavior) */
-    .dropdown-content.show {
-        display: block;  /* Show when JavaScript toggles the 'show' class */
-    }
-    
-    /* The toggle button is shown only on small screens */
-    .navbar-toggle {
-        display: block;  /* Show the hamburger icon on mobile */
+    .dropdown-content a {
+        padding: 15px 15px;
     }
 
-    /* When the 'show' class is added, the menu is displayed */
+    .dropdown-content.show {
+        display: block; 
+    }
+    
+    .navbar-toggle {
+        display: block;
+    }
+
     .navbar .navbar-menu.show {
-        display: flex;  /* Show the menu when 'show' class is added */
+        display: flex;
+    }
+
+    .navbar-toggle.floating {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+        transition: top 0.3s ease-in-out;
+        background: rgb(255,255,255,0.5);
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
     }
 }
