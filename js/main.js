@@ -76,3 +76,18 @@ document.addEventListener('click', (e) => {
         });
     }
 });
+
+const slide = document.querySelector('.carousel-slide');
+let offset = 0;
+
+function continuousSlide() {
+  offset += 1; // Adjust this for speed
+  if (offset >= slide.scrollWidth / 2) {
+    offset = 0; // Reset to create a seamless loop
+  }
+  slide.style.transform = `translateX(-${offset}px)`;
+  requestAnimationFrame(continuousSlide);
+}
+
+// Start animation
+continuousSlide();
